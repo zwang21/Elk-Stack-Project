@@ -338,7 +338,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the configuration file to Ansible container.
 - Update the the configuration file to include Elk server's IP address, which is 10.1.0.4 in my project.
-- Run the playbook, and navigate to the bottom of http://<<Elk-server-ip>>:5601/app/kibana and click on **Verify Incoming Data** to check that the installation worked as expected.
+- Run the playbook, and navigate to the bottom of [http://<Elk-server-ip>:5601/app/kibana](http://<Elk-server-ip>:5601/app/kibana) and click on **Verify Incoming Data** to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:
 - Which file is the playbook? 
