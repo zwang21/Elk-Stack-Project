@@ -338,7 +338,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the configuration file to Ansible container.
 - Update the the configuration file to include Elk server's IP address, which is 10.1.0.4 in my project.
-- Run the playbook, and navigate to the bottom of http://<Elk-server-ip>:5601/app/kibana and click on **Verify Incoming Data** to check that the installation worked as expected.
+- Run the playbook, and navigate to the bottom of http://<<Elk-server-ip>>:5601/app/kibana and click on **Verify Incoming Data** to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:
 - Which file is the playbook? 
@@ -353,7 +353,6 @@ Answer the following questions to fill in the blanks:
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 	- Edit in beat configuration file templates 
 
-
 ```
     output.elasticsearch:
     hosts: ["10.1.0.4:9200"]
@@ -365,7 +364,6 @@ Answer the following questions to fill in the blanks:
     setup.kibana:
     host: "10.1.0.4:5601"
 ```
-
 
 - Which URL do you navigate to in order to check that the ELK server is running?
 	- http://52.188.106.10:5601/app/kibana
